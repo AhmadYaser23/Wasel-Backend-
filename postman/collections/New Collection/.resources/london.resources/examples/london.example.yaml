@@ -1,0 +1,21 @@
+$kind: http-example
+request:
+  url: https://localhost:8081/api/external/location-weather?query=london
+  method: GET
+  queryParams:
+    query: "london "
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-type: application/json; charset=utf-8
+    date: Sun, 15 Mar 2026 01:15:17 GMT
+    server: Kestrel
+    transfer-encoding: chunked
+    api-supported-versions: "1.0"
+  body:
+    type: json
+    content: '{"Location":{"Latitude":51.5074456,"Longitude":-0.1277653,"DisplayName":"Greater
+      London, England, United
+      Kingdom"},"Weather":{"Status":"Clouds","Temperature":3.42,"Humidity":73}}'
+order: 1000

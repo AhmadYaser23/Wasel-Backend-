@@ -1,0 +1,14 @@
+# Use this workspace to collaborate
+workspace:
+  id: 3b0531f7-a6ad-4915-8a9e-09fb4b766384
+
+localResources:
+  specs:
+    - ..\ProjectWasel\obj\Debug\net8.0\EndpointInfo\ProjectWasel.json
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+cloudResources:
+  collections:
+    ..\postman\collections\New Collection: 53050157-aba11c7b-025b-4b48-bd2c-f46ea66abc88
+  specs:
+    ..\ProjectWasel\obj\Debug\net8.0\EndpointInfo\ProjectWasel.json: b0ba0c77-9a79-4817-ae3b-90693047205d

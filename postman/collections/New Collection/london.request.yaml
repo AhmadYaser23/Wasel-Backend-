@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://localhost:8081/api/external/location-weather?query=london
+method: GET
+queryParams:
+  query: "london "
+examples: ./.resources/london.resources/examples
+order: 1000
