@@ -8,6 +8,8 @@ using ProjectWasel.Repositories;
 using ProjectWasel.Repositres;
 using ProjectWasel.Services;
 using System.Net.Http.Headers;
+using ProjectWasel.Profiles;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiKey = builder.Configuration["OpenWeatherApiKey"];
@@ -24,9 +26,9 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ===== DbContext =====
+// ===== DbContext (CHANGED TO POSTGRESQL) =====
 builder.Services.AddDbContext<WaselContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ===== Repositories =====
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
@@ -40,17 +42,15 @@ builder.Services.AddScoped<IRouteRepository, RouteRepository>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<AlertService>();
 builder.Services.AddScoped<RouteService>();
-//builder.Services.AddScoped<ExternalApiService>();
 
 // ===== Helpers =====
 builder.Services.AddSingleton<JwtHelper>();
 builder.Services.AddSingleton<PasswordHasher>();
 
 // ===== HTTP Clients with Polly =====
-// Program.cs
 builder.Services.AddHttpClient<GeoService>(client =>
 {
-    client.DefaultRequestHeaders.Add("User-Agent", "ProjectWaselApp"); // مهم لـ Nominatim
+    client.DefaultRequestHeaders.Add("User-Agent", "ProjectWaselApp");
 });
 
 builder.Services.AddHttpClient<WeatherService>(client =>
@@ -58,8 +58,12 @@ builder.Services.AddHttpClient<WeatherService>(client =>
     client.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/");
 });
 builder.Services.AddScoped<ExternalApiService>();
-
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+// ===== Profiles =====
 var app = builder.Build();
+
+
+
 
 // ===== Middleware =====
 if (app.Environment.IsDevelopment())
@@ -72,7 +76,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-
 app.MapGet("/test-weather", async (IConfiguration config) =>
 {
     var httpClient = new HttpClient
@@ -80,10 +83,9 @@ app.MapGet("/test-weather", async (IConfiguration config) =>
         BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/")
     };
     var weatherService = new WeatherService(httpClient, config);
-    var weather = await weatherService.GetWeatherAsync(31.5, 34.47); // غزة تقريبًا
+    var weather = await weatherService.GetWeatherAsync(31.5, 34.47);
     return Results.Ok(weather);
 });
-
 
 app.MapGet("/test-weather1", async (ExternalApiService externalApi) =>
 {
@@ -91,4 +93,5 @@ app.MapGet("/test-weather1", async (ExternalApiService externalApi) =>
     if (data == null) return Results.NotFound("Data not available.");
     return Results.Ok(data);
 });
+
 app.Run();

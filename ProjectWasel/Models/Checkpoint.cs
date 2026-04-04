@@ -13,10 +13,10 @@ namespace ProjectWasel.Models
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
         public string Status { get; set; }
-        public DateTime LastUpdated { get; set; }
-
+        public DateTime LastUpdated { get; set; } = DateTime.UtcNow;
         // Navigation
         public ICollection<Incident> Incidents { get; set; }
-        public ICollection<CheckpointStatusHistory> StatusHistory { get; set; }
+        
+        public List<CheckpointStatusHistory> StatusHistory { get; set; } = new List<CheckpointStatusHistory>();        
     }
 }

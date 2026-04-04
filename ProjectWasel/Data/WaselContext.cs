@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics; // Required for suppression
 using ProjectWasel.Models;
 using System;
 using Route = ProjectWasel.Models.Route;
@@ -17,13 +18,20 @@ namespace ProjectWasel.Data
         public DbSet<Subscription> Subscriptions { get; set; }
         public DbSet<ExternalData> ExternalData { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
-        public DbSet<Route> Routes { get; set; } // جدول المسارات الجديد
+        public DbSet<Route> Routes { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // This stops EF Core 9 from crashing due to dynamic seed data
+            optionsBuilder.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            var now = DateTime.UtcNow;
+            // FIX: Use a static date so EF Core doesn't think the model is "changing"
+            var seedDate = new DateTime(2026, 3, 21, 0, 0, 0, DateTimeKind.Utc);
 
             // ======= Decimal Precision =======
             modelBuilder.Entity<Checkpoint>().Property(c => c.Latitude).HasPrecision(9, 6);
@@ -74,44 +82,43 @@ namespace ProjectWasel.Data
                 .HasForeignKey(s => s.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // ======= Seed Data =======
+            // ======= Seed Data (Using seedDate) =======
             modelBuilder.Entity<User>().HasData(
-                new User { UserId = 1, Username = "Ahmed_Admin", Email = "ahmed@wasel.ps", PasswordHash = "SECRET_HASH_ABC", Role = "admin", CreatedAt = now },
-                new User { UserId = 2, Username = "Noor_Mod", Email = "noor@wasel.ps", PasswordHash = "SECRET_HASH_XYZ", Role = "moderator", CreatedAt = now },
-                new User { UserId = 3, Username = "Mohammad_User", Email = "mohammad@wasel.ps", PasswordHash = "SECRET_HASH_123", Role = "citizen", CreatedAt = now }
+                new User { UserId = 1, Username = "Ahmed_Admin", Email = "ahmed@wasel.ps", PasswordHash = "SECRET_HASH_ABC", Role = "admin", CreatedAt = seedDate },
+                new User { UserId = 2, Username = "Noor_Mod", Email = "noor@wasel.ps", PasswordHash = "SECRET_HASH_XYZ", Role = "moderator", CreatedAt = seedDate },
+                new User { UserId = 3, Username = "Mohammad_User", Email = "mohammad@wasel.ps", PasswordHash = "SECRET_HASH_123", Role = "citizen", CreatedAt = seedDate }
             );
 
             modelBuilder.Entity<Checkpoint>().HasData(
-                new Checkpoint { CheckpointId = 1, Name = "Qalandia", Latitude = 31.9539m, Longitude = 35.2061m, Status = "active", LastUpdated = now },
-                new Checkpoint { CheckpointId = 2, Name = "Bethlehem 300", Latitude = 31.7054m, Longitude = 35.2024m, Status = "delayed", LastUpdated = now }
+                new Checkpoint { CheckpointId = 1, Name = "Qalandia", Latitude = 31.9539m, Longitude = 35.2061m, Status = "active", LastUpdated = seedDate },
+                new Checkpoint { CheckpointId = 2, Name = "Bethlehem 300", Latitude = 31.7054m, Longitude = 35.2024m, Status = "delayed", LastUpdated = seedDate }
             );
 
             modelBuilder.Entity<CheckpointStatusHistory>().HasData(
-                new CheckpointStatusHistory { HistoryId = 1, CheckpointId = 1, Status = "active", ChangedAt = now },
-                new CheckpointStatusHistory { HistoryId = 2, CheckpointId = 2, Status = "delayed", ChangedAt = now }
+                new CheckpointStatusHistory { HistoryId = 1, CheckpointId = 1, Status = "active", ChangedAt = seedDate },
+                new CheckpointStatusHistory { HistoryId = 2, CheckpointId = 2, Status = "delayed", ChangedAt = seedDate }
             );
 
             modelBuilder.Entity<Incident>().HasData(
-                new Incident { IncidentId = 1, Title = "Accident at Qalandia", Description = "Minor accident", Type = "accident", Severity = "low", CheckpointId = 1, CreatedByUserId = 3, Status = "verified", CreatedAt = now, UpdatedAt = now },
-                new Incident { IncidentId = 2, Title = "Closure at Bethlehem 300", Description = "Temporary closure", Type = "closure", Severity = "medium", CheckpointId = 2, CreatedByUserId = 3, Status = "verified", CreatedAt = now, UpdatedAt = now }
+                new Incident { IncidentId = 1, Title = "Accident at Qalandia", Description = "Minor accident", Type = "accident", Severity = "low", CheckpointId = 1, CreatedByUserId = 3, Status = "verified", CreatedAt = seedDate, UpdatedAt = seedDate },
+                new Incident { IncidentId = 2, Title = "Closure at Bethlehem 300", Description = "Temporary closure", Type = "closure", Severity = "medium", CheckpointId = 2, CreatedByUserId = 3, Status = "verified", CreatedAt = seedDate, UpdatedAt = seedDate }
             );
 
             modelBuilder.Entity<Report>().HasData(
-                new Report { ReportId = 1, UserId = 3, IncidentId = 1, Latitude = 31.9539m, Longitude = 35.2061m, Category = "Accident", Description = "Saw minor accident", Votes = 5, CreatedAt = now },
-                new Report { ReportId = 2, UserId = 2, IncidentId = 2, Latitude = 31.7054m, Longitude = 35.2024m, Category = "Closure", Description = "Road closed temporarily", Votes = 3, CreatedAt = now }
+                new Report { ReportId = 1, UserId = 3, IncidentId = 1, Latitude = 31.9539m, Longitude = 35.2061m, Category = "Accident", Description = "Saw minor accident", Votes = 5, CreatedAt = seedDate },
+                new Report { ReportId = 2, UserId = 2, IncidentId = 2, Latitude = 31.7054m, Longitude = 35.2024m, Category = "Closure", Description = "Road closed temporarily", Votes = 3, CreatedAt = seedDate }
             );
 
             modelBuilder.Entity<Subscription>().HasData(
-                new Subscription { SubscriptionId = 1, UserId = 3, GeographicArea = "Qalandia", Category = "Accident", CreatedAt = now },
-                new Subscription { SubscriptionId = 2, UserId = 2, GeographicArea = "Bethlehem", Category = "Closure", CreatedAt = now }
+                new Subscription { SubscriptionId = 1, UserId = 3, GeographicArea = "Qalandia", Category = "Accident", CreatedAt = seedDate },
+                new Subscription { SubscriptionId = 2, UserId = 2, GeographicArea = "Bethlehem", Category = "Closure", CreatedAt = seedDate }
             );
 
             modelBuilder.Entity<ExternalData>().HasData(
-                new ExternalData { DataId = 1, Source = "WeatherAPI", ExternalKey = "weather_1", JsonData = "{\"temp\":25,\"status\":\"sunny\"}", FetchedAt = now },
-                new ExternalData { DataId = 2, Source = "OpenStreetMap", ExternalKey = "map_1", JsonData = "{\"road\":\"open\"}", FetchedAt = now }
+                new ExternalData { DataId = 1, Source = "WeatherAPI", ExternalKey = "weather_1", JsonData = "{\"temp\":25,\"status\":\"sunny\"}", FetchedAt = seedDate },
+                new ExternalData { DataId = 2, Source = "OpenStreetMap", ExternalKey = "map_1", JsonData = "{\"road\":\"open\"}", FetchedAt = seedDate }
             );
 
-            // ======= Seed Data for Routes =======
             modelBuilder.Entity<Route>().HasData(
                 new Route
                 {
@@ -122,7 +129,7 @@ namespace ProjectWasel.Data
                     EndLng = 35.2024m,
                     EstimatedDistance = 30.5m,
                     EstimatedDuration = 0.76m,
-                    CreatedAt = now
+                    CreatedAt = seedDate
                 }
             );
         }

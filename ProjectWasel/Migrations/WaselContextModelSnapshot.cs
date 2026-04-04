@@ -2,8 +2,8 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ProjectWasel.Data;
 
 #nullable disable
@@ -17,37 +17,37 @@ namespace ProjectWasel.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("ProjectWasel.Models.Checkpoint", b =>
                 {
                     b.Property<int>("CheckpointId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CheckpointId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CheckpointId"));
 
                     b.Property<DateTime>("LastUpdated")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<decimal>("Latitude")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<decimal>("Longitude")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("CheckpointId");
 
@@ -57,7 +57,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             CheckpointId = 1,
-                            LastUpdated = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            LastUpdated = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Latitude = 31.9539m,
                             Longitude = 35.2061m,
                             Name = "Qalandia",
@@ -66,7 +66,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             CheckpointId = 2,
-                            LastUpdated = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            LastUpdated = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Latitude = 31.7054m,
                             Longitude = 35.2024m,
                             Name = "Bethlehem 300",
@@ -78,19 +78,19 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("HistoryId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HistoryId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("HistoryId"));
 
                     b.Property<DateTime>("ChangedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("CheckpointId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("HistoryId");
 
@@ -102,14 +102,14 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             HistoryId = 1,
-                            ChangedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            ChangedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             CheckpointId = 1,
                             Status = "active"
                         },
                         new
                         {
                             HistoryId = 2,
-                            ChangedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            ChangedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             CheckpointId = 2,
                             Status = "delayed"
                         });
@@ -119,24 +119,24 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("DataId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DataId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DataId"));
 
                     b.Property<string>("ExternalKey")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("FetchedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("JsonData")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Source")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("DataId");
 
@@ -147,7 +147,7 @@ namespace ProjectWasel.Migrations
                         {
                             DataId = 1,
                             ExternalKey = "weather_1",
-                            FetchedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            FetchedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             JsonData = "{\"temp\":25,\"status\":\"sunny\"}",
                             Source = "WeatherAPI"
                         },
@@ -155,7 +155,7 @@ namespace ProjectWasel.Migrations
                         {
                             DataId = 2,
                             ExternalKey = "map_1",
-                            FetchedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            FetchedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             JsonData = "{\"road\":\"open\"}",
                             Source = "OpenStreetMap"
                         });
@@ -165,44 +165,44 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("IncidentId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IncidentId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IncidentId"));
 
                     b.Property<int?>("CheckpointId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("CreatedByUserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Severity")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("UserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("IncidentId");
 
@@ -219,27 +219,27 @@ namespace ProjectWasel.Migrations
                         {
                             IncidentId = 1,
                             CheckpointId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             CreatedByUserId = 3,
                             Description = "Minor accident",
                             Severity = "low",
                             Status = "verified",
                             Title = "Accident at Qalandia",
                             Type = "accident",
-                            UpdatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282)
+                            UpdatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760)
                         },
                         new
                         {
                             IncidentId = 2,
                             CheckpointId = 2,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             CreatedByUserId = 3,
                             Description = "Temporary closure",
                             Severity = "medium",
                             Status = "verified",
                             Title = "Closure at Bethlehem 300",
                             Type = "closure",
-                            UpdatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282)
+                            UpdatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760)
                         });
                 });
 
@@ -247,22 +247,22 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("ExpiresAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("IsRevoked")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Token")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("UserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -275,37 +275,37 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("ReportId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReportId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ReportId"));
 
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int?>("IncidentId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<decimal>("Latitude")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<decimal>("Longitude")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<int?>("UserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Votes")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("ReportId");
 
@@ -320,7 +320,7 @@ namespace ProjectWasel.Migrations
                         {
                             ReportId = 1,
                             Category = "Accident",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Description = "Saw minor accident",
                             IncidentId = 1,
                             Latitude = 31.9539m,
@@ -332,7 +332,7 @@ namespace ProjectWasel.Migrations
                         {
                             ReportId = 2,
                             Category = "Closure",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Description = "Road closed temporarily",
                             IncidentId = 2,
                             Latitude = 31.7054m,
@@ -346,36 +346,36 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("RouteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RouteId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RouteId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<decimal>("EndLat")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<decimal>("EndLng")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<decimal>("EstimatedDistance")
                         .HasPrecision(10, 2)
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("numeric(10,2)");
 
                     b.Property<decimal>("EstimatedDuration")
                         .HasPrecision(10, 2)
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("numeric(10,2)");
 
                     b.Property<decimal>("StartLat")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.Property<decimal>("StartLng")
                         .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("numeric(9,6)");
 
                     b.HasKey("RouteId");
 
@@ -385,7 +385,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             RouteId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             EndLat = 31.7054m,
                             EndLng = 35.2024m,
                             EstimatedDistance = 30.5m,
@@ -399,23 +399,23 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("SubscriptionId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubscriptionId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("SubscriptionId"));
 
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("GeographicArea")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int?>("UserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("SubscriptionId");
 
@@ -428,7 +428,7 @@ namespace ProjectWasel.Migrations
                         {
                             SubscriptionId = 1,
                             Category = "Accident",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             GeographicArea = "Qalandia",
                             UserId = 3
                         },
@@ -436,7 +436,7 @@ namespace ProjectWasel.Migrations
                         {
                             SubscriptionId = 2,
                             Category = "Closure",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             GeographicArea = "Bethlehem",
                             UserId = 2
                         });
@@ -446,28 +446,28 @@ namespace ProjectWasel.Migrations
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("UserId");
 
@@ -477,7 +477,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             UserId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Email = "ahmed@wasel.ps",
                             PasswordHash = "SECRET_HASH_ABC",
                             Role = "admin",
@@ -486,7 +486,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             UserId = 2,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Email = "noor@wasel.ps",
                             PasswordHash = "SECRET_HASH_XYZ",
                             Role = "moderator",
@@ -495,7 +495,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             UserId = 3,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 3, 21, 20, 32, 51, 90, DateTimeKind.Utc).AddTicks(8760),
                             Email = "mohammad@wasel.ps",
                             PasswordHash = "SECRET_HASH_123",
                             Role = "citizen",

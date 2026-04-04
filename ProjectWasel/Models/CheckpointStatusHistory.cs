@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjectWasel.Models
 {
@@ -12,7 +13,8 @@ namespace ProjectWasel.Models
         public string Status { get; set; }
         public DateTime ChangedAt { get; set; }
 
-        // Navigation
-        public Checkpoint Checkpoint { get; set; }
+        [ForeignKey("CheckpointId")]
+        public Checkpoint? Checkpoint { get; set; }
+        
     }
 }

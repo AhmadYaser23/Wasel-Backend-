@@ -3,7 +3,9 @@ using ProjectWasel.Models;
 using ProjectWasel.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-
+using ProjectWasel.Models.ModelsDTO;
+using AutoMapper;
+using static ProjectWasel.Repositories.ICheckpointRepository;
 namespace ProjectWasel.Controllers
 {
     [ApiController]
@@ -12,10 +14,12 @@ namespace ProjectWasel.Controllers
     public class CheckpointController : ControllerBase
     {
         private readonly ICheckpointRepository _checkpointRepo;
+        private readonly IMapper _mapper; // 1. Added Mapper
 
-        public CheckpointController(ICheckpointRepository checkpointRepo)
+        public CheckpointController(ICheckpointRepository checkpointRepo, IMapper mapper)
         {
             _checkpointRepo = checkpointRepo;
+            _mapper = mapper;
         }
 
         // GET: api/checkpoint
@@ -43,13 +47,14 @@ namespace ProjectWasel.Controllers
             return Ok(checkpoint);
         }
 
-        // POST: api/checkpoint
+        /* POST: api/checkpoint
         [HttpPost]
         public async Task<ActionResult<Checkpoint>> Create(Checkpoint checkpoint)
         {
             var created = await _checkpointRepo.AddAsync(checkpoint);
             return CreatedAtAction(nameof(GetById), new { id = created.CheckpointId }, created);
         }
+        */
 
         // PUT: api/checkpoint/{id}
         [HttpPut("{id}")]
@@ -86,6 +91,19 @@ namespace ProjectWasel.Controllers
         {
             await _checkpointRepo.DeleteAsync(id);
             return NoContent();
+        }
+        
+        [HttpPost]
+        public async Task<ActionResult<CheckpointDTO>> Create(CheckpointDTO checkpointDto)
+        {
+            var checkpoint = _mapper.Map<Checkpoint>(checkpointDto);
+
+          
+            await _checkpointRepo.AddAsync(checkpoint);
+
+            var resultDto = _mapper.Map<CheckpointDTO>(checkpoint);
+
+            return CreatedAtAction(nameof(GetById), new { id = checkpoint.CheckpointId }, resultDto);
         }
     }
 }

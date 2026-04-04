@@ -39,5 +39,28 @@ namespace ProjectWasel.Repositories
                 .FromSqlRaw("SELECT * FROM Checkpoints WHERE CheckpointId = {0}", id)
                 .FirstOrDefaultAsync();
         }
+        
+        public  new async Task<Checkpoint> AddAsync(Checkpoint checkpoint)
+        {
+            _context.Checkpoints.Add(checkpoint);
+            await _context.SaveChangesAsync();
+
+            var initialHistory = new CheckpointStatusHistory
+            {
+                CheckpointId = checkpoint.CheckpointId, 
+                Status = checkpoint.Status,             
+                ChangedAt = DateTime.UtcNow             
+            };
+
+          
+            _context.CheckpointStatusHistories.Add(initialHistory);
+            await _context.SaveChangesAsync();
+
+            return checkpoint;
+        }
+
     }
+    
+   
+    
 }
