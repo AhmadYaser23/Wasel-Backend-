@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectWasel.Models;
 using ProjectWasel.Repositories;
+using AutoMapper; 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ProjectWasel.Models.ModelsDTO;
 
 namespace ProjectWasel.Controllers
 {
@@ -12,10 +14,12 @@ namespace ProjectWasel.Controllers
     public class IncidentController : ControllerBase
     {
         private readonly IIncidentRepository _incidentRepo;
+        private readonly IMapper _mapper; // Added Mapper
 
-        public IncidentController(IIncidentRepository incidentRepo)
+        public IncidentController(IIncidentRepository incidentRepo, IMapper mapper) // Added mapper to constructor
         {
             _incidentRepo = incidentRepo;
+            _mapper = mapper;
         }
 
         // GET: api/v1/incident
@@ -61,17 +65,38 @@ namespace ProjectWasel.Controllers
 
             return Ok(incident);
         }
-
-        // POST: api/v1/incident
-        [HttpPost]
-        public async Task<ActionResult<Incident>> Create(Incident incident)
+        
+        [HttpGet("filter")]
+        public async Task<ActionResult> GetByType([FromQuery] string? type = null)
         {
-            var created = await _incidentRepo.AddAsync(incident);
+            IEnumerable<Incident> incidents = await _incidentRepo.GetAllAsync();
+
+            if (!string.IsNullOrEmpty(type))
+                incidents = incidents.Where(i => i.Type != null && i.Type.ToLower() == type.ToLower());
+
+            return Ok(incidents);
+        }
+        
+
+        // Updated POST to use the DTO for validation and mapping
+        [HttpPost]
+        public async Task<ActionResult<Incident>> Create(IncidentCreateDTO incidentDto)
+        {
+            // 1. Map DTO to Model
+            var incident = _mapper.Map<Incident>(incidentDto);
+
+            // 2. Set default timestamps
+            incident.CreatedAt = DateTime.UtcNow;
+            incident.UpdatedAt = DateTime.UtcNow;
+            incident.Status = "active";
+
+            // 3. Save
+            await _incidentRepo.AddAsync(incident);
 
             return CreatedAtAction(
                 nameof(GetById),
-                new { version = "1", id = created.IncidentId },
-                created
+                new { version = "1", id = incident.IncidentId },
+                incident
             );
         }
 

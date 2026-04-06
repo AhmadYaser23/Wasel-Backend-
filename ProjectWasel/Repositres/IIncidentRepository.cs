@@ -36,5 +36,14 @@ namespace ProjectWasel.Repositories
                 .FromSqlRaw("SELECT * FROM Incidents WHERE CheckpointId = {0}", checkpointId)
                 .ToListAsync();
         }
+        
+        public async Task<List<Incident>> GetIncidentsByCheckpointAsync(int checkpointId)
+        {
+            return await _dbSet
+                .Where(i => i.CheckpointId == checkpointId && i.Status == "active")
+                .OrderByDescending(i => i.CreatedAt) // Newest first!
+                .ToListAsync();
+        }
+       
     }
 }
