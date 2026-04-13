@@ -51,10 +51,10 @@ namespace ProjectWasel.Helper
         public (string TokenRaw, string TokenHash, DateTime ExpiresAt) GenerateRefreshToken()
         {
             var tokenRaw = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
-            var tokenHash = BCrypt.Net.BCrypt.HashPassword(tokenRaw);
             var expiresAt = DateTime.UtcNow.AddDays(7);
 
-            return (tokenRaw, tokenHash, expiresAt);
+            // Store token as-is (not BCrypt hashed) so we can look it up by ==
+            return (tokenRaw, tokenRaw, expiresAt);
         }
     }
 }

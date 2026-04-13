@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProjectWasel.Models;
 using ProjectWasel.Repositories;
 using AutoMapper; 
@@ -14,15 +15,15 @@ namespace ProjectWasel.Controllers
     public class IncidentController : ControllerBase
     {
         private readonly IIncidentRepository _incidentRepo;
-        private readonly IMapper _mapper; // Added Mapper
+        private readonly IMapper _mapper;
 
-        public IncidentController(IIncidentRepository incidentRepo, IMapper mapper) // Added mapper to constructor
+        public IncidentController(IIncidentRepository incidentRepo, IMapper mapper)
         {
             _incidentRepo = incidentRepo;
             _mapper = mapper;
         }
 
-        // GET: api/v1/incident
+        // GET: api/v1/incident — Public
         [HttpGet]
         public async Task<ActionResult<List<Incident>>> GetAll()
         {
@@ -30,7 +31,7 @@ namespace ProjectWasel.Controllers
             return Ok(incidents);
         }
 
-        // GET: api/v1/incident/verified
+        // GET: api/v1/incident/verified — Public
         [HttpGet("verified")]
         public async Task<ActionResult<List<Incident>>> GetVerified()
         {
@@ -38,7 +39,7 @@ namespace ProjectWasel.Controllers
             return Ok(verified);
         }
 
-        // GET: api/v1/incident/verified-raw
+        // GET: api/v1/incident/verified-raw — Public (Raw SQL)
         [HttpGet("verified-raw")]
         public async Task<ActionResult<List<Incident>>> GetVerifiedRaw()
         {
@@ -46,7 +47,7 @@ namespace ProjectWasel.Controllers
             return Ok(verified);
         }
 
-        // GET: api/v1/incident/checkpoint/{checkpointId}
+        // GET: api/v1/incident/checkpoint/{checkpointId} — Public
         [HttpGet("checkpoint/{checkpointId}")]
         public async Task<ActionResult<List<Incident>>> GetByCheckpoint(int checkpointId)
         {
@@ -54,43 +55,39 @@ namespace ProjectWasel.Controllers
             return Ok(list);
         }
 
-        // GET: api/v1/incident/{id}
+        // GET: api/v1/incident/{id} — Public
         [HttpGet("{id}")]
         public async Task<ActionResult<Incident>> GetById(int id)
         {
             var incident = await _incidentRepo.GetByIdAsync(id);
-
-            if (incident == null)
-                return NotFound();
-
+            if (incident == null) return NotFound();
             return Ok(incident);
         }
         
+        // GET: api/v1/incident/filter?type=closure&severity=High — Public
         [HttpGet("filter")]
-        public async Task<ActionResult> GetByType([FromQuery] string? type = null)
+        public async Task<ActionResult> GetFiltered([FromQuery] string? type = null, [FromQuery] string? severity = null)
         {
-            IEnumerable<Incident> incidents = await _incidentRepo.GetAllAsync();
-
-            if (!string.IsNullOrEmpty(type))
-                incidents = incidents.Where(i => i.Type != null && i.Type.ToLower() == type.ToLower());
-
+            var incidents = await _incidentRepo.GetFilteredAsync(type, severity);
             return Ok(incidents);
         }
-        
 
-        // Updated POST to use the DTO for validation and mapping
+        // POST: api/v1/incident — Admin or Moderator only
+        [Authorize(Roles = "admin,moderator")]
         [HttpPost]
         public async Task<ActionResult<Incident>> Create(IncidentCreateDTO incidentDto)
         {
-            // 1. Map DTO to Model
             var incident = _mapper.Map<Incident>(incidentDto);
 
-            // 2. Set default timestamps
+            // Extract logged-in user's ID from JWT token
+            var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (userIdClaim != null)
+                incident.CreatedByUserId = int.Parse(userIdClaim.Value);
+
             incident.CreatedAt = DateTime.UtcNow;
             incident.UpdatedAt = DateTime.UtcNow;
             incident.Status = "active";
 
-            // 3. Save
             await _incidentRepo.AddAsync(incident);
 
             return CreatedAtAction(
@@ -100,24 +97,22 @@ namespace ProjectWasel.Controllers
             );
         }
 
-        // PUT: api/v1/incident/{id}
+        // PUT: api/v1/incident/{id} — Admin or Moderator only
+        [Authorize(Roles = "admin,moderator")]
         [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, Incident incident)
+        public async Task<ActionResult> Update(int id, IncidentUpdateDTO dto)
         {
-            if (id != incident.IncidentId)
-                return BadRequest();
-
-            await _incidentRepo.UpdateAsync(incident);
-
-            return NoContent();
+            var updated = await _incidentRepo.UpdatePartialAsync(id, dto);
+            if (updated == null) return NotFound();
+            return Ok(updated);
         }
 
-        // DELETE: api/v1/incident/{id}
+        // DELETE: api/v1/incident/{id} — Admin only
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             await _incidentRepo.DeleteAsync(id);
-
             return NoContent();
         }
     }

@@ -29,12 +29,15 @@ namespace ProjectWasel.Repositories
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 throw new Exception("Email already exists");
 
+            var allowedRoles = new[] { "admin", "moderator", "citizen" };
+            var role = allowedRoles.Contains(dto.Role?.ToLower()) ? dto.Role.ToLower() : "citizen";
+
             var user = new User
             {
                 Username = dto.Username,
                 Email = dto.Email,
                 PasswordHash = _passwordHasher.Hash(dto.Password),
-                Role = "Member",
+                Role = role,
                 CreatedAt = DateTime.UtcNow
             };
 
