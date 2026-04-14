@@ -17,6 +17,7 @@ namespace ProjectWasel.Models
 
         public int? CheckpointId { get; set; }
         public int? CreatedByUserId { get; set; }
+        public int? VerifiedByUserId { get; set; }
 
         public string Status { get; set; }
         public DateTime CreatedAt { get; set; }
@@ -28,6 +29,10 @@ namespace ProjectWasel.Models
         [ForeignKey("CreatedByUserId")]
         public User CreatedByUser { get; set; }
 
+        [ForeignKey("VerifiedByUserId")]
+        public User? VerifiedByUser { get; set; }
+
         public ICollection<Report> Reports { get; set; }
+        public ICollection<Alert> Alerts { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ProjectWasel.Data;
@@ -11,9 +12,11 @@ using ProjectWasel.Data;
 namespace ProjectWasel.Migrations
 {
     [DbContext(typeof(WaselContext))]
-    partial class WaselContextModelSnapshot : ModelSnapshot
+    [Migration("20260414053003_AddVerifiedByUserIdToIncident")]
+    partial class AddVerifiedByUserIdToIncident
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,31 +24,6 @@ namespace ProjectWasel.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("ProjectWasel.Models.Alert", b =>
-                {
-                    b.Property<int>("AlertId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("AlertId"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("IncidentId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("AlertId");
-
-                    b.HasIndex("IncidentId");
-
-                    b.ToTable("Alerts");
-                });
 
             modelBuilder.Entity("ProjectWasel.Models.Checkpoint", b =>
                 {
@@ -528,17 +506,6 @@ namespace ProjectWasel.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ProjectWasel.Models.Alert", b =>
-                {
-                    b.HasOne("ProjectWasel.Models.Incident", "Incident")
-                        .WithMany("Alerts")
-                        .HasForeignKey("IncidentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Incident");
-                });
-
             modelBuilder.Entity("ProjectWasel.Models.CheckpointStatusHistory", b =>
                 {
                     b.HasOne("ProjectWasel.Models.Checkpoint", "Checkpoint")
@@ -621,8 +588,6 @@ namespace ProjectWasel.Migrations
 
             modelBuilder.Entity("ProjectWasel.Models.Incident", b =>
                 {
-                    b.Navigation("Alerts");
-
                     b.Navigation("Reports");
                 });
 

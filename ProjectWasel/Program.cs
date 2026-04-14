@@ -73,6 +73,7 @@ builder.Services.AddScoped<IRouteRepository, RouteRepository>();
 // ===== Services =====
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<AlertService>();
+builder.Services.AddScoped<IncidentService>();
 builder.Services.AddScoped<RouteService>();
 
 // ===== JWT Authentication =====

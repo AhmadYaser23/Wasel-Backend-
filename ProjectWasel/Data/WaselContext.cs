@@ -19,6 +19,7 @@ namespace ProjectWasel.Data
         public DbSet<ExternalData> ExternalData { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<Route> Routes { get; set; }
+        public DbSet<Alert> Alerts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -53,6 +54,12 @@ namespace ProjectWasel.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Incident>()
+                .HasOne(i => i.VerifiedByUser)
+                .WithMany(u => u.VerifiedIncidents)
+                .HasForeignKey(i => i.VerifiedByUserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Incident>()
                 .HasOne(i => i.Checkpoint)
                 .WithMany(c => c.Incidents)
                 .HasForeignKey(i => i.CheckpointId)
@@ -62,6 +69,12 @@ namespace ProjectWasel.Data
                 .HasOne(h => h.Checkpoint)
                 .WithMany(c => c.StatusHistory)
                 .HasForeignKey(h => h.CheckpointId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Alert>()
+                .HasOne(a => a.Incident)
+                .WithMany(i => i.Alerts)
+                .HasForeignKey(a => a.IncidentId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Report>()

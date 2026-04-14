@@ -13,5 +13,8 @@ namespace ProjectWasel.Models
         public string Message { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        // Navigation
+        public Incident Incident { get; set; }
     }
 }

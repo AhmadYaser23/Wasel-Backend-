@@ -1,4 +1,5 @@
 ﻿using ProjectWasel.Models;
+using ProjectWasel.Models.ModelsDTO;
 using ProjectWasel.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,26 +15,31 @@ namespace ProjectWasel.Services
             _incidentRepo = incidentRepo;
         }
 
-        public Task<Incident> GetByIdAsync(int id) => _incidentRepo.GetByIdAsync(id);
-
-        public async Task<Incident> AddIncidentAsync(Incident incident)
-        {
-            var added = await _incidentRepo.AddAsync(incident);
-
-            // هنا ممكن نضيف Trigger للـAlerts إذا الحادث verified
-            // await _alertService.TriggerAlertForIncident(added);
-
-            return added;
-        }
-
-        public Task UpdateIncidentAsync(Incident incident) => _incidentRepo.UpdateAsync(incident);
-
-        public Task DeleteIncidentAsync(int id) => _incidentRepo.DeleteAsync(id);
-
         public Task<List<Incident>> GetAllAsync() => _incidentRepo.GetAllAsync();
 
-        // ===== استدعاء Raw SQL =====
+        public Task<Incident?> GetByIdAsync(int id) => _incidentRepo.GetByIdAsync(id);
+
         public Task<List<Incident>> GetVerifiedIncidentsRawAsync() => _incidentRepo.GetVerifiedIncidentsRawAsync();
+
         public Task<List<Incident>> GetByCheckpointRawAsync(int checkpointId) => _incidentRepo.GetByCheckpointRawAsync(checkpointId);
+
+        public Task<List<Incident>> GetFilteredAsync(string? type, string? severity) => _incidentRepo.GetFilteredAsync(type, severity);
+
+        public async Task<Incident> CreateAsync(Incident incident)
+        {
+            incident.CreatedAt = DateTime.UtcNow;
+            incident.UpdatedAt = DateTime.UtcNow;
+            incident.Status = "active";
+
+            return await _incidentRepo.AddAsync(incident);
+        }
+
+        public Task<Incident?> UpdatePartialAsync(int id, IncidentUpdateDTO dto) => _incidentRepo.UpdatePartialAsync(id, dto);
+
+        public Task<Incident?> VerifyAsync(int id, int verifiedByUserId) => _incidentRepo.VerifyAsync(id, verifiedByUserId);
+
+        public Task<Incident?> CloseAsync(int id) => _incidentRepo.CloseAsync(id);
+
+        public Task<bool> DeleteAsync(int id) => _incidentRepo.DeleteAsync(id);
     }
 }

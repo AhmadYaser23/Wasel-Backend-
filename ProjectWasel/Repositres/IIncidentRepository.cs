@@ -14,6 +14,8 @@ namespace ProjectWasel.Repositories
         Task<List<Incident>> GetByCheckpointRawAsync(int checkpointId);
         Task<List<Incident>> GetFilteredAsync(string? type, string? severity);
         Task<Incident?> UpdatePartialAsync(int id, IncidentUpdateDTO dto);
+        Task<Incident?> VerifyAsync(int id, int verifiedByUserId);
+        Task<Incident?> CloseAsync(int id);
     }
 
     public class IncidentRepository : GenericRepository<Incident>, IIncidentRepository
@@ -23,6 +25,26 @@ namespace ProjectWasel.Repositories
         public IncidentRepository(WaselContext context) : base(context) 
         {
             _context = context;
+        }
+
+        // ===== Override base methods to include navigation =====
+        public new async Task<List<Incident>> GetAllAsync()
+        {
+            return await _dbSet
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .OrderByDescending(i => i.CreatedAt)
+                .ToListAsync();
+        }
+
+        public new async Task<Incident?> GetByIdAsync(int id)
+        {
+            return await _dbSet
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .FirstOrDefaultAsync(i => i.IncidentId == id);
         }
 
         // ===== Raw SQL Methods =====
@@ -50,7 +72,11 @@ namespace ProjectWasel.Repositories
 
         public async Task<List<Incident>> GetFilteredAsync(string? type, string? severity)
         {
-            var query = _dbSet.AsQueryable();
+            var query = _dbSet
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .AsQueryable();
 
             if (!string.IsNullOrEmpty(type))
                 query = query.Where(i => i.Type.ToLower() == type.ToLower());
@@ -63,7 +89,11 @@ namespace ProjectWasel.Repositories
 
         public async Task<Incident?> UpdatePartialAsync(int id, IncidentUpdateDTO dto)
         {
-            var existing = await _context.Incidents.FindAsync(id);
+            var existing = await _context.Incidents
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .FirstOrDefaultAsync(i => i.IncidentId == id);
             if (existing == null) return null;
 
             if (dto.Title != null) existing.Title = dto.Title;
@@ -73,6 +103,42 @@ namespace ProjectWasel.Repositories
             if (dto.Status != null) existing.Status = dto.Status;
             if (dto.CheckpointId.HasValue) existing.CheckpointId = dto.CheckpointId.Value;
 
+            existing.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            return existing;
+        }
+
+        public async Task<Incident?> VerifyAsync(int id, int verifiedByUserId)
+        {
+            var existing = await _context.Incidents
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .FirstOrDefaultAsync(i => i.IncidentId == id);
+            if (existing == null) return null;
+
+            existing.Status = "verified";
+            existing.VerifiedByUserId = verifiedByUserId;
+            existing.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            // Reload VerifiedByUser after setting the FK
+            await _context.Entry(existing).Reference(i => i.VerifiedByUser).LoadAsync();
+
+            return existing;
+        }
+
+        public async Task<Incident?> CloseAsync(int id)
+        {
+            var existing = await _context.Incidents
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .FirstOrDefaultAsync(i => i.IncidentId == id);
+            if (existing == null) return null;
+
+            existing.Status = "closed";
             existing.UpdatedAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();
 
