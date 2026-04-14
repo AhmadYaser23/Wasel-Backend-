@@ -1,33 +1,33 @@
 ﻿using ProjectWasel.Models;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
-namespace ProjectWasel.Models
+public class Incident
 {
-    public class Incident
-    {
-        [Key]
-        public int IncidentId { get; set; }      // PK
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Type { get; set; }
-        public string Severity { get; set; }
+    [Key]
+    public int IncidentId { get; set; }
 
-        public int? CheckpointId { get; set; }
-        public int? CreatedByUserId { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public string Type { get; set; }
+    public string Severity { get; set; }
 
-        public string Status { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+    public int? CheckpointId { get; set; }
+    public int? CreatedByUserId { get; set; }
 
-        // Navigation
-        public Checkpoint Checkpoint { get; set; }
+    public string Status { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
 
-        [ForeignKey("CreatedByUserId")]
-        public User CreatedByUser { get; set; }
+    // 👇 العلاقات (حل اللوب + تهيئة مثل Checkpoint)
 
-        public ICollection<Report> Reports { get; set; }
-    }
+    //[JsonIgnore]
+    public Checkpoint? Checkpoint { get; set; }
+
+   // [JsonIgnore]
+    public User? CreatedByUser { get; set; }
+
+   // [JsonIgnore]
+    public ICollection<Report>? Reports { get; set; } = new List<Report>();
+
 }

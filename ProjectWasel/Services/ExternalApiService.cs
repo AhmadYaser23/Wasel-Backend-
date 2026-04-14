@@ -1,6 +1,6 @@
 ﻿using ProjectWasel.Models;
 using System.Text.Json;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ProjectWasel.Services
 {
@@ -8,15 +8,35 @@ namespace ProjectWasel.Services
     {
         private readonly GeoService _geoService;
         private readonly WeatherService _weatherService;
+        private readonly IMemoryCache _cache;
 
-        public ExternalApiService(GeoService geoService, WeatherService weatherService)
+        public ExternalApiService(
+            GeoService geoService,
+            WeatherService weatherService,
+            IMemoryCache cache)
         {
             _geoService = geoService;
             _weatherService = weatherService;
+            _cache = cache;
         }
 
         public async Task<ExternalData?> GetLocationWeatherDataAsync(string query)
         {
+            var cacheKey = $"full_{query.ToLower()}";
+
+            // ✅ Check cache
+            if (_cache.TryGetValue(cacheKey, out string cachedJson))
+            {
+                return new ExternalData
+                {
+                    Source = "Geo + Weather API",
+                    ExternalKey = query,
+                    JsonData = cachedJson,
+                    FetchedAt = DateTime.UtcNow
+                };
+            }
+
+            // ❗ Fetch from APIs
             var geo = await _geoService.GetLocationAsync(query);
             if (geo == null) return null;
 
@@ -29,11 +49,16 @@ namespace ProjectWasel.Services
                 Weather = weather
             };
 
+            var json = JsonSerializer.Serialize(combined);
+
+            // ✅ Store in cache
+            _cache.Set(cacheKey, json, TimeSpan.FromMinutes(15));
+
             return new ExternalData
             {
                 Source = "Geo + Weather API",
                 ExternalKey = query,
-                JsonData = JsonSerializer.Serialize(combined),
+                JsonData = json,
                 FetchedAt = DateTime.UtcNow
             };
         }

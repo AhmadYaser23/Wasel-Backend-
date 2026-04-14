@@ -36,5 +36,7 @@ namespace ProjectWasel.Repositories
                 .FromSqlRaw("SELECT * FROM Incidents WHERE CheckpointId = {0}", checkpointId)
                 .ToListAsync();
         }
+
+
     }
 }

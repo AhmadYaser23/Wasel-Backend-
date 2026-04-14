@@ -29,7 +29,16 @@ namespace ProjectWasel.Controllers
             if (data == null)
                 return NotFound("Data not available.");
 
-            _context.ExternalData.Add(data);
+            // ✅ Create NEW entity for EF (important)
+            var entity = new ExternalData
+            {
+                Source = data.Source,
+                ExternalKey = data.ExternalKey,
+                JsonData = data.JsonData,
+                FetchedAt = data.FetchedAt
+            };
+
+            _context.ExternalData.Add(entity);
             await _context.SaveChangesAsync();
 
             return Ok(JsonSerializer.Deserialize<object>(data.JsonData));

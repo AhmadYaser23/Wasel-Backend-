@@ -12,8 +12,8 @@ using ProjectWasel.Data;
 namespace ProjectWasel.Migrations
 {
     [DbContext(typeof(WaselContext))]
-    [Migration("20260313194216_in")]
-    partial class @in
+    [Migration("20260411164648_first")]
+    partial class first
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,12 +37,10 @@ namespace ProjectWasel.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Latitude")
-                        .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("Longitude")
-                        .HasPrecision(9, 6)
-                        .HasColumnType("decimal(9,6)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -60,7 +58,7 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             CheckpointId = 1,
-                            LastUpdated = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            LastUpdated = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             Latitude = 31.9539m,
                             Longitude = 35.2061m,
                             Name = "Qalandia",
@@ -69,11 +67,11 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             CheckpointId = 2,
-                            LastUpdated = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            LastUpdated = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             Latitude = 31.7054m,
                             Longitude = 35.2024m,
-                            Name = "Bethlehem 300",
-                            Status = "delayed"
+                            Name = "Bethlehem",
+                            Status = "active"
                         });
                 });
 
@@ -105,16 +103,9 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             HistoryId = 1,
-                            ChangedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            ChangedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             CheckpointId = 1,
                             Status = "active"
-                        },
-                        new
-                        {
-                            HistoryId = 2,
-                            ChangedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            CheckpointId = 2,
-                            Status = "delayed"
                         });
                 });
 
@@ -149,18 +140,10 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             DataId = 1,
-                            ExternalKey = "weather_1",
-                            FetchedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            JsonData = "{\"temp\":25,\"status\":\"sunny\"}",
+                            ExternalKey = "weather_qalandia",
+                            FetchedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            JsonData = "{\"temp\":25}",
                             Source = "WeatherAPI"
-                        },
-                        new
-                        {
-                            DataId = 2,
-                            ExternalKey = "map_1",
-                            FetchedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            JsonData = "{\"road\":\"open\"}",
-                            Source = "OpenStreetMap"
                         });
                 });
 
@@ -222,27 +205,14 @@ namespace ProjectWasel.Migrations
                         {
                             IncidentId = 1,
                             CheckpointId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             CreatedByUserId = 3,
-                            Description = "Minor accident",
+                            Description = "Car accident",
                             Severity = "low",
                             Status = "verified",
-                            Title = "Accident at Qalandia",
+                            Title = "Accident",
                             Type = "accident",
-                            UpdatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282)
-                        },
-                        new
-                        {
-                            IncidentId = 2,
-                            CheckpointId = 2,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            CreatedByUserId = 3,
-                            Description = "Temporary closure",
-                            Severity = "medium",
-                            Status = "verified",
-                            Title = "Closure at Bethlehem 300",
-                            Type = "closure",
-                            UpdatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282)
+                            UpdatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070)
                         });
                 });
 
@@ -304,6 +274,12 @@ namespace ProjectWasel.Migrations
                         .HasPrecision(9, 6)
                         .HasColumnType("decimal(9,6)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
                     b.Property<int?>("UserId")
                         .HasColumnType("int");
 
@@ -323,25 +299,109 @@ namespace ProjectWasel.Migrations
                         {
                             ReportId = 1,
                             Category = "Accident",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            Description = "Saw minor accident",
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            Description = "Saw accident",
                             IncidentId = 1,
                             Latitude = 31.9539m,
                             Longitude = 35.2061m,
+                            Status = 1,
+                            Timestamp = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             UserId = 3,
                             Votes = 5
-                        },
+                        });
+                });
+
+            modelBuilder.Entity("ProjectWasel.Models.ReportAuditLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ActionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ModeratorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NewStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PreviousStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Reason")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("ReportId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModeratorId");
+
+                    b.HasIndex("ReportId");
+
+                    b.ToTable("ReportAuditLogs");
+
+                    b.HasData(
                         new
                         {
-                            ReportId = 2,
-                            Category = "Closure",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            Description = "Road closed temporarily",
-                            IncidentId = 2,
-                            Latitude = 31.7054m,
-                            Longitude = 35.2024m,
+                            Id = 1,
+                            Action = "Approve",
+                            ActionDate = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            ModeratorId = 2,
+                            NewStatus = "Verified",
+                            PreviousStatus = "Pending",
+                            Reason = "Valid",
+                            ReportId = 1
+                        });
+                });
+
+            modelBuilder.Entity("ProjectWasel.Models.ReportVote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsUpVote")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ReportId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("VotedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ReportVotes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsUpVote = true,
+                            ReportId = 1,
                             UserId = 2,
-                            Votes = 3
+                            VotedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070)
                         });
                 });
 
@@ -388,11 +448,11 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             RouteId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             EndLat = 31.7054m,
                             EndLng = 35.2024m,
-                            EstimatedDistance = 30.5m,
-                            EstimatedDuration = 0.76m,
+                            EstimatedDistance = 25.5m,
+                            EstimatedDuration = 0.6m,
                             StartLat = 31.9539m,
                             StartLng = 35.2061m
                         });
@@ -431,17 +491,9 @@ namespace ProjectWasel.Migrations
                         {
                             SubscriptionId = 1,
                             Category = "Accident",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
                             GeographicArea = "Qalandia",
                             UserId = 3
-                        },
-                        new
-                        {
-                            SubscriptionId = 2,
-                            Category = "Closure",
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            GeographicArea = "Bethlehem",
-                            UserId = 2
                         });
                 });
 
@@ -458,7 +510,23 @@ namespace ProjectWasel.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("FailedLoginAttempts")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastLoginAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("LockoutUntil")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
@@ -470,7 +538,8 @@ namespace ProjectWasel.Migrations
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("UserId");
 
@@ -480,29 +549,38 @@ namespace ProjectWasel.Migrations
                         new
                         {
                             UserId = 1,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            Email = "ahmed@wasel.ps",
-                            PasswordHash = "SECRET_HASH_ABC",
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            Email = "admin@wasel.com",
+                            FailedLoginAttempts = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            PasswordHash = "HASH1",
                             Role = "admin",
-                            Username = "Ahmed_Admin"
+                            Username = "Admin"
                         },
                         new
                         {
                             UserId = 2,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            Email = "noor@wasel.ps",
-                            PasswordHash = "SECRET_HASH_XYZ",
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            Email = "mod@wasel.com",
+                            FailedLoginAttempts = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            PasswordHash = "HASH2",
                             Role = "moderator",
-                            Username = "Noor_Mod"
+                            Username = "Moderator"
                         },
                         new
                         {
                             UserId = 3,
-                            CreatedAt = new DateTime(2026, 3, 13, 19, 42, 15, 476, DateTimeKind.Utc).AddTicks(8282),
-                            Email = "mohammad@wasel.ps",
-                            PasswordHash = "SECRET_HASH_123",
+                            CreatedAt = new DateTime(2026, 4, 11, 16, 46, 48, 452, DateTimeKind.Utc).AddTicks(4070),
+                            Email = "user1@wasel.com",
+                            FailedLoginAttempts = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            PasswordHash = "HASH3",
                             Role = "citizen",
-                            Username = "Mohammad_User"
+                            Username = "User1"
                         });
                 });
 
@@ -541,7 +619,7 @@ namespace ProjectWasel.Migrations
             modelBuilder.Entity("ProjectWasel.Models.RefreshToken", b =>
                 {
                     b.HasOne("ProjectWasel.Models.User", "User")
-                        .WithMany()
+                        .WithMany("RefreshTokens")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -566,12 +644,49 @@ namespace ProjectWasel.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("ProjectWasel.Models.ReportAuditLog", b =>
+                {
+                    b.HasOne("ProjectWasel.Models.User", "Moderator")
+                        .WithMany()
+                        .HasForeignKey("ModeratorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectWasel.Models.Report", "Report")
+                        .WithMany()
+                        .HasForeignKey("ReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Moderator");
+
+                    b.Navigation("Report");
+                });
+
+            modelBuilder.Entity("ProjectWasel.Models.ReportVote", b =>
+                {
+                    b.HasOne("ProjectWasel.Models.Report", "Report")
+                        .WithMany()
+                        .HasForeignKey("ReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectWasel.Models.User", "User")
+                        .WithMany("Votes")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Report");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ProjectWasel.Models.Subscription", b =>
                 {
                     b.HasOne("ProjectWasel.Models.User", "User")
                         .WithMany("Subscriptions")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
@@ -592,11 +707,15 @@ namespace ProjectWasel.Migrations
                 {
                     b.Navigation("CreatedIncidents");
 
+                    b.Navigation("RefreshTokens");
+
                     b.Navigation("Reports");
 
                     b.Navigation("Subscriptions");
 
                     b.Navigation("VerifiedIncidents");
+
+                    b.Navigation("Votes");
                 });
 #pragma warning restore 612, 618
         }

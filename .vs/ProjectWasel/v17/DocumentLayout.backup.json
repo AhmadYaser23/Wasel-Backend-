@@ -3,64 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\data\\waselcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\data\\waselcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\iincidentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\iincidentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\projectwasel.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\projectwasel.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\externaldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\externaldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\geoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\geoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\incidentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\incidentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\noorf\\source\\repos\\projectwasel\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\data\\waselcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\data\\waselcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\projectwasel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\projectwasel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\georesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\georesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\weatherresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\weatherresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\externaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\externaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\incidentnesteddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\incidentnesteddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\reportresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\reportresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\routeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\routeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\helper\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\helper\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,6 +91,14 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\routecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\externaldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\externaldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\checkpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\checkpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,32 +107,16 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\alertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\irouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\irouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\icheckpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\icheckpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\geoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\geoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\iincidentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\iincidentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\helper\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\helper\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,12 +127,28 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\alertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\irouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\irouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\icheckpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\icheckpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\repositres\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,37 +159,6 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\repositres\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -174,16 +167,12 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\routeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\routeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\routerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\routerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\routerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\routerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\modelsdto\\incidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -206,10 +195,6 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\modelsdto\\alertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -218,44 +203,129 @@
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\reportvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\reportvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\reportauditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\reportauditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\georesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\georesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\externaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\externaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\checkpointstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\checkpointstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\models\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\models\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\migrations\\20260310183243_addroutestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\migrations\\20260310183243_addroutestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.ExternalData.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\noorf\\source\\repos\\projectwasel\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\projectwasel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\projectwasel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noorf\\Desktop\\K6_TEST\\soak-test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noorf\\Desktop\\K6_TEST\\spike-test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noorf\\Desktop\\K6_TEST\\write-test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\projectwasel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\projectwasel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\projectwasel.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\projectwasel.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\noorf\\source\\repos\\projectwasel\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\noorf\\source\\repos\\projectwasel\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\noorf\\source\\repos\\projectwasel\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\migrations\\20260301203252_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\migrations\\20260301203252_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Incidents.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\migrations\\20260313194216_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\migrations\\20260313194216_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|c:\\users\\noorf\\source\\repos\\projectwasel\\projectwasel\\migrations\\20260411164648_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146F5247-173F-4BFF-A741-33D1EB44B22C}|ProjectWasel\\ProjectWasel.csproj|solutionrelative:projectwasel\\migrations\\20260411164648_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -265,188 +335,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeatherService.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\WeatherService.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Services\\WeatherService.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\WeatherService.cs",
-              "RelativeToolTip": "ProjectWasel\\Services\\WeatherService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:19:27.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Program.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Program.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Program.cs",
-              "RelativeToolTip": "ProjectWasel\\Program.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAF0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:22:14.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\appsettings.json",
-              "RelativeDocumentMoniker": "ProjectWasel\\appsettings.json",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\appsettings.json",
-              "RelativeToolTip": "ProjectWasel\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-01T20:25:58.248Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProjectWasel.http",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.http",
-              "RelativeDocumentMoniker": "ProjectWasel\\ProjectWasel.http",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.http",
-              "RelativeToolTip": "ProjectWasel\\ProjectWasel.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-03-09T21:38:00.518Z"
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ReportService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\ReportService.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:44:53.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExternalDataController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ExternalDataController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\ExternalDataController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ExternalDataController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\ExternalDataController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswCUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IncidentController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\IncidentController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\IncidentController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\IncidentController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\IncidentController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAswFIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:20:09.845Z"
+              "WhenOpened": "2026-03-09T19:31:16.111Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WaselContext.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Data\\WaselContext.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Data\\WaselContext.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Data\\WaselContext.cs",
-              "RelativeToolTip": "ProjectWasel\\Data\\WaselContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Title": "IncidentService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\IncidentService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\IncidentService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\IncidentService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\IncidentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:20:56.173Z",
+              "WhenOpened": "2026-03-09T18:35:47.523Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IIncidentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IIncidentRepository.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IIncidentRepository.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IIncidentRepository.cs",
+              "RelativeToolTip": "ProjectWasel\\Repositres\\IIncidentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:31:07.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Report.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Report.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:19:19.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ExternalApiService.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ExternalApiService.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Services\\ExternalApiService.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ExternalApiService.cs",
-              "RelativeToolTip": "ProjectWasel\\Services\\ExternalApiService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswCgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "WaselContext.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Data\\WaselContext.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Data\\WaselContext.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Data\\WaselContext.cs",
+              "RelativeToolTip": "ProjectWasel\\Data\\WaselContext.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAD4v48AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:23:55.987Z"
+              "WhenOpened": "2026-03-01T20:20:56.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\User.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\User.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwC0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:19:36.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GeoService.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\GeoService.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Services\\GeoService.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\GeoService.cs",
-              "RelativeToolTip": "ProjectWasel\\Services\\GeoService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA9wBkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:19:01.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RouteService.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\RouteService.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Services\\RouteService.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\RouteService.cs",
-              "RelativeToolTip": "ProjectWasel\\Services\\RouteService.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwGAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:42:42.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "20260313194216_in.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260313194216_in.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Migrations\\20260313194216_in.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260313194216_in.cs",
-              "RelativeToolTip": "ProjectWasel\\Migrations\\20260313194216_in.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:42:17.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IncidentController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\IncidentController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\IncidentController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\IncidentController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\IncidentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:31:16.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "docker-compose.dcproj",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.dcproj",
-              "RelativeDocumentMoniker": "docker-compose.dcproj",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.dcproj",
-              "RelativeToolTip": "docker-compose.dcproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-10T18:33:38.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProjectWasel.csproj",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
-              "RelativeDocumentMoniker": "ProjectWasel\\ProjectWasel.csproj",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
-              "RelativeToolTip": "ProjectWasel\\ProjectWasel.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAArwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-01T20:15:47.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GeoResult.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\GeoResult.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\GeoResult.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\GeoResult.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\GeoResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:16:12.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "WeatherResult.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\WeatherResult.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Models\\WeatherResult.cs",
@@ -454,131 +450,129 @@
               "RelativeToolTip": "ProjectWasel\\Models\\WeatherResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:16:34.425Z"
+              "WhenOpened": "2026-03-13T19:16:34.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RouteController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\RouteController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\RouteController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\RouteController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\RouteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Checkpoint.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Checkpoint.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Checkpoint.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Checkpoint.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Checkpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:26:05.531Z"
+              "WhenOpened": "2026-03-01T20:18:45.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SubscriptionController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\SubscriptionController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\SubscriptionController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\SubscriptionController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\SubscriptionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Incident.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Incident.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Incident.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Incident.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Incident.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:37:11.863Z"
+              "WhenOpened": "2026-03-01T20:19:15.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IncidentNestedDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentNestedDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\IncidentNestedDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentNestedDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\IncidentNestedDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T04:10:35.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReportResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportResponseDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\ReportResponseDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportResponseDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\ReportResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T04:10:14.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Program.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Program.cs",
+              "RelativeToolTip": "ProjectWasel\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:22:14.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:38:39.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ExternalData.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ExternalData.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ExternalData.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ExternalData.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ExternalData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:19:05.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CheckpointController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\CheckpointController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\CheckpointController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\CheckpointController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\CheckpointController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:30:44.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AlertController.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\AlertController.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\AlertController.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\AlertController.cs",
-              "RelativeToolTip": "ProjectWasel\\Controllers\\AlertController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:26:31.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IRouteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IRouteRepository.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IRouteRepository.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IRouteRepository.cs",
-              "RelativeToolTip": "ProjectWasel\\Repositres\\IRouteRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:10:44.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ICheckpointRepository.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ICheckpointRepository.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\ICheckpointRepository.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ICheckpointRepository.cs",
-              "RelativeToolTip": "ProjectWasel\\Repositres\\ICheckpointRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:33:28.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IIncidentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IIncidentRepository.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IIncidentRepository.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IIncidentRepository.cs",
-              "RelativeToolTip": "ProjectWasel\\Repositres\\IIncidentRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:31:07.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Dockerfile",
               "RelativeDocumentMoniker": "ProjectWasel\\Dockerfile",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Dockerfile",
               "RelativeToolTip": "ProjectWasel\\Dockerfile",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwB0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-01T20:40:33.979Z"
+              "WhenOpened": "2026-03-01T20:40:33.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 14,
+              "Title": "Alert.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Alert.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Alert.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Alert.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Alert.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:41:24.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RouteResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:29:35.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjectWasel\\appsettings.json",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\appsettings.json",
+              "RelativeToolTip": "ProjectWasel\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-01T20:25:58.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Helper\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Helper\\PasswordHasher.cs",
@@ -586,71 +580,220 @@
               "RelativeToolTip": "ProjectWasel\\Helper\\PasswordHasher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:08:42.235Z"
+              "WhenOpened": "2026-03-09T19:08:42.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "Jwt.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Helper\\Jwt.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Helper\\Jwt.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Helper\\Jwt.cs",
               "RelativeToolTip": "ProjectWasel\\Helper\\Jwt.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswDsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:59:01.235Z"
+              "WhenOpened": "2026-03-09T18:59:01.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:38:39.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SubscriptionController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\SubscriptionController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\SubscriptionController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\SubscriptionController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\SubscriptionController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:37:11.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RouteController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\RouteController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\RouteController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\RouteController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\RouteController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T19:26:05.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAQwJYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:45:30.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ExternalDataController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ExternalDataController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\ExternalDataController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\ExternalDataController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\ExternalDataController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:20:09.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CheckpointController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\CheckpointController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\CheckpointController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\CheckpointController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\CheckpointController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T19:30:44.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AlertController.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\AlertController.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\AlertController.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\AlertController.cs",
+              "RelativeToolTip": "ProjectWasel\\Controllers\\AlertController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T19:26:31.252Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "IncidentService.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\IncidentService.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Services\\IncidentService.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\IncidentService.cs",
-              "RelativeToolTip": "ProjectWasel\\Services\\IncidentService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCYAAAABAAAAAAAAAA==",
+              "Title": "RouteService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\RouteService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\RouteService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\RouteService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\RouteService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:35:47.523Z"
+              "WhenOpened": "2026-03-09T18:42:42.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "GeoService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\GeoService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\GeoService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\GeoService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\GeoService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:19:01.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ExternalApiService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ExternalApiService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\ExternalApiService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\ExternalApiService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\ExternalApiService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:23:55.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\AuthService.cs",
               "RelativeToolTip": "ProjectWasel\\Services\\AuthService.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAswGMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwGMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:17:07.204Z"
+              "WhenOpened": "2026-03-09T19:17:07.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "AlertService.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\AlertService.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Services\\AlertService.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\AlertService.cs",
               "RelativeToolTip": "ProjectWasel\\Services\\AlertService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:43:27.573Z"
+              "WhenOpened": "2026-03-09T18:43:27.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
+              "Title": "ReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ReportRepository.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\ReportRepository.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ReportRepository.cs",
+              "RelativeToolTip": "ProjectWasel\\Repositres\\ReportRepository.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwK8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:44:13.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "ISubscriptionRepository.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ISubscriptionRepository.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\ISubscriptionRepository.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ISubscriptionRepository.cs",
               "RelativeToolTip": "ProjectWasel\\Repositres\\ISubscriptionRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAkwDMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:33:53.007Z"
+              "WhenOpened": "2026-03-10T17:33:53.007Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
+              "Title": "IRouteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IRouteRepository.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IRouteRepository.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IRouteRepository.cs",
+              "RelativeToolTip": "ProjectWasel\\Repositres\\IRouteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T18:10:44.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IRepository.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IRepository.cs",
@@ -658,59 +801,351 @@
               "RelativeToolTip": "ProjectWasel\\Repositres\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:20:51.356Z"
+              "WhenOpened": "2026-03-09T18:20:51.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
+              "Title": "IReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IReportRepository.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\IReportRepository.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\IReportRepository.cs",
+              "RelativeToolTip": "ProjectWasel\\Repositres\\IReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:53:17.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ICheckpointRepository.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ICheckpointRepository.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\ICheckpointRepository.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\ICheckpointRepository.cs",
+              "RelativeToolTip": "ProjectWasel\\Repositres\\ICheckpointRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA6wCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:33:28.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\GenericRepository.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\GenericRepository.cs",
               "RelativeToolTip": "ProjectWasel\\Repositres\\GenericRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwC0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:23:02.346Z"
+              "WhenOpened": "2026-03-09T18:23:02.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\AuthRepository.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Repositres\\AuthRepository.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Repositres\\AuthRepository.cs",
               "RelativeToolTip": "ProjectWasel\\Repositres\\AuthRepository.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAowFMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwFMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:16:40.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Alert.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Alert.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Alert.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Alert.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Alert.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:41:24.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Microsoft.Common.props",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwCEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-03-12T22:55:10.171Z"
+              "WhenOpened": "2026-03-09T19:16:40.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:26:33.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SubscriptionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:28:02.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RouteRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:29:01.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ReportDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAywEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:27:37.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IncidentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:18:25.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CheckpointDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:27:02.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AuthDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T19:19:24.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AlertSubscribersDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:46:30.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AlertDTO.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:45:54.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Subscription.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Subscription.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:19:24.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Route.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Route.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Route.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Route.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\Route.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:42:09.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ReportVote.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ReportVote.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ReportVote.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ReportVote.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ReportVote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:37:38.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ReportAuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ReportAuditLog.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ReportAuditLog.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ReportAuditLog.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ReportAuditLog.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:37:40.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T19:15:16.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "GeoResult.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\GeoResult.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\GeoResult.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\GeoResult.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\GeoResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:16:12.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ExternalData.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ExternalData.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ExternalData.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ExternalData.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\ExternalData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:19:05.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CheckpointStatusHistory.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\CheckpointStatusHistory.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Models\\CheckpointStatusHistory.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\CheckpointStatusHistory.cs",
+              "RelativeToolTip": "ProjectWasel\\Models\\CheckpointStatusHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:18:59.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "dbo.ExternalData.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.ExternalData.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.ExternalData.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-11T16:43:20.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20260411164648_first.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260411164648_first.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Migrations\\20260411164648_first.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260411164648_first.cs",
+              "RelativeToolTip": "ProjectWasel\\Migrations\\20260411164648_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T16:46:49.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-11T16:47:32.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "docker-compose.dcproj",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAA4AAABACmPer94SwAYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-10T18:33:38.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20260411162702_UpdateReportSystem.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs",
+              "RelativeToolTip": "ProjectWasel\\Migrations\\20260411162702_UpdateReportSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T16:27:02.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ProjectWasel.csproj",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
+              "RelativeDocumentMoniker": "ProjectWasel\\ProjectWasel.csproj",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
+              "RelativeToolTip": "ProjectWasel\\ProjectWasel.csproj",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-01T20:15:47.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ProjectWasel\\appsettings.Development.json",
@@ -722,289 +1157,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 62,
+              "Title": "soak-test.js",
+              "DocumentMoniker": "C:\\Users\\noorf\\Desktop\\K6_TEST\\soak-test.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\K6_TEST\\soak-test.js",
+              "ToolTip": "C:\\Users\\noorf\\Desktop\\K6_TEST\\soak-test.js",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\K6_TEST\\soak-test.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-07T19:46:50.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\.gitignore",
+              "RelativeDocumentMoniker": "ProjectWasel\\.gitignore",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\.gitignore",
+              "RelativeToolTip": "ProjectWasel\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-18T19:13:41.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "write-test.js",
+              "DocumentMoniker": "C:\\Users\\noorf\\Desktop\\K6_TEST\\write-test.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\K6_TEST\\write-test.js",
+              "ToolTip": "C:\\Users\\noorf\\Desktop\\K6_TEST\\write-test.js",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\K6_TEST\\write-test.js",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-07T19:42:37.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "spike-test.js",
+              "DocumentMoniker": "C:\\Users\\noorf\\Desktop\\K6_TEST\\spike-test.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\K6_TEST\\spike-test.js",
+              "ToolTip": "C:\\Users\\noorf\\Desktop\\K6_TEST\\spike-test.js",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\K6_TEST\\spike-test.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-07T19:46:25.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProjectWasel",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
+              "RelativeDocumentMoniker": "ProjectWasel\\ProjectWasel.csproj",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.csproj",
+              "RelativeToolTip": "ProjectWasel\\ProjectWasel.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-18T19:47:58.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "OverriddenGroupName": "",
+              "OverriddenToolTip": "docker-compose.override.yml",
+              "WhenOpened": "2026-03-01T21:57:20.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-24T17:37:16.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ProjectWasel.http",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.http",
+              "RelativeDocumentMoniker": "ProjectWasel\\ProjectWasel.http",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\ProjectWasel.http",
+              "RelativeToolTip": "ProjectWasel\\ProjectWasel.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-09T21:38:00.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\WeatherForecast.cs",
+              "RelativeToolTip": "ProjectWasel\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T19:47:54.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "ProjectWasel\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "ProjectWasel\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T20:29:10.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Incident.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Incident.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Incident.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Incident.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Incident.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAEBgwBQAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 72,
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "ProjectWasel\\Services\\WeatherService.cs",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Services\\WeatherService.cs",
+              "RelativeToolTip": "ProjectWasel\\Services\\WeatherService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:19:15.219Z"
+              "WhenOpened": "2026-03-13T19:19:27.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:26:33.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SubscriptionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\SubscriptionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:28:02.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "RouteResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\RouteResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:29:35.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ReportDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\ReportDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:27:37.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "RouteRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\RouteRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:29:01.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "IncidentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\IncidentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:18:25.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CheckpointDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\CheckpointDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T18:27:02.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "AuthDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AuthDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:19:24.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AlertSubscribersDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AlertSubscribersDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:46:30.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AlertDTO.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\ModelsDTO\\AlertDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:45:54.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\User.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\User.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:19:36.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Subscription.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Subscription.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Subscription.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Subscription.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Subscription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:19:24.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Route.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Route.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Route.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Route.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Route.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T17:42:09.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Report.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Report.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Report.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Report.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:19:19.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\RefreshToken.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\RefreshToken.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\RefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T19:15:16.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "CheckpointStatusHistory.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\CheckpointStatusHistory.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\CheckpointStatusHistory.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\CheckpointStatusHistory.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\CheckpointStatusHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:18:59.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "Checkpoint.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Checkpoint.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Models\\Checkpoint.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Models\\Checkpoint.cs",
-              "RelativeToolTip": "ProjectWasel\\Models\\Checkpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:18:45.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "dbo.Routes.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-03-10T18:59:38.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "20260310183243_AddRoutesTable.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260310183243_AddRoutesTable.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Migrations\\20260310183243_AddRoutesTable.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260310183243_AddRoutesTable.cs",
-              "RelativeToolTip": "ProjectWasel\\Migrations\\20260310183243_AddRoutesTable.cs",
+              "DocumentIndex": 74,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:32:44.23Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-24T17:37:17.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ProjectWasel\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ProjectWasel\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-09T21:38:09.829Z"
+              "DocumentIndex": 73,
+              "Title": "Dockerfile.original",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Dockerfile.original",
+              "RelativeDocumentMoniker": "ProjectWasel\\Dockerfile.original",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Dockerfile.original",
+              "RelativeToolTip": "ProjectWasel\\Dockerfile.original",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-24T17:37:56.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "dbo.Checkpoints.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-03-09T19:54:19.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-01T21:57:20.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 75,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -1016,7 +1325,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 76,
+              "Title": "dbo.Incidents.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Incidents.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Incidents.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-22T19:50:51.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Microsoft.Common.props",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-03-12T22:55:10.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "dbo.Routes.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/localhost_1433/WaselDb/sa/SqlTable/dbo.Routes.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-10T18:59:38.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProjectWasel\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProjectWasel\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-09T21:38:09.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "dbo.Checkpoints.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Checkpoints.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-09T19:54:19.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
               "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
@@ -1028,24 +1388,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 81,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WaselDB/True/SqlTable/dbo.Users.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2026-03-01T20:37:22.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "20260301203252_init.cs",
-              "DocumentMoniker": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260301203252_init.cs",
-              "RelativeDocumentMoniker": "ProjectWasel\\Migrations\\20260301203252_init.cs",
-              "ToolTip": "C:\\Users\\noorf\\source\\repos\\ProjectWasel\\ProjectWasel\\Migrations\\20260301203252_init.cs",
-              "RelativeToolTip": "ProjectWasel\\Migrations\\20260301203252_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:32:52.509Z"
             }
           ]
         }

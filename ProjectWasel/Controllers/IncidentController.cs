@@ -83,7 +83,6 @@ namespace ProjectWasel.Controllers
                 return BadRequest();
 
             await _incidentRepo.UpdateAsync(incident);
-
             return NoContent();
         }
 
@@ -92,7 +91,6 @@ namespace ProjectWasel.Controllers
         public async Task<ActionResult> Delete(int id)
         {
             await _incidentRepo.DeleteAsync(id);
-
             return NoContent();
         }
     }
