@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectWasel.Models;
 using ProjectWasel.Services;
-using AutoMapper; 
+using AutoMapper;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ProjectWasel.Models.ModelsDTO;
@@ -23,16 +23,37 @@ namespace ProjectWasel.Controllers
             _mapper = mapper;
         }
 
-        // GET: api/v1/incident — Public
+        // ────────────────────────────────────────────────────────────────────────
+        // GET: api/v1/incident
+        // Supports filtering, sorting, and pagination via query string.
+        //
+        // Filter params  : type, severity, status, checkpointId, createdAfter, createdBefore
+        // Sort params    : sortBy (createdAt|updatedAt|severity|type|status)
+        //                  sortOrder (asc|desc)
+        // Pagination     : page (default 1), pageSize (default 10, max 50)
+        //
+        // Example:
+        //   /incident?type=closure&severity=High&status=active
+        //             &sortBy=createdAt&sortOrder=desc&page=1&pageSize=10
+        // ────────────────────────────────────────────────────────────────────────
         [HttpGet]
-        public async Task<ActionResult<List<IncidentResponseDTO>>> GetAll()
+        public async Task<ActionResult<PagedResult<IncidentResponseDTO>>> GetAll(
+            [FromQuery] IncidentQueryParams queryParams)
         {
-            var incidents = await _incidentService.GetAllAsync();
-            var result = _mapper.Map<List<IncidentResponseDTO>>(incidents);
+            var pagedIncidents = await _incidentService.GetPagedAsync(queryParams);
+
+            var result = new PagedResult<IncidentResponseDTO>
+            {
+                Data       = _mapper.Map<List<IncidentResponseDTO>>(pagedIncidents.Data),
+                TotalCount = pagedIncidents.TotalCount,
+                Page       = pagedIncidents.Page,
+                PageSize   = pagedIncidents.PageSize
+            };
+
             return Ok(result);
         }
 
-        // GET: api/v1/incident/verified — Public
+        // GET: api/v1/incident/verified — Public (raw SQL, kept for compatibility)
         [HttpGet("verified")]
         public async Task<ActionResult<List<IncidentResponseDTO>>> GetVerified()
         {
@@ -51,39 +72,31 @@ namespace ProjectWasel.Controllers
         }
 
         // GET: api/v1/incident/{id} — Public
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<IncidentResponseDTO>> GetById(int id)
         {
             var incident = await _incidentService.GetByIdAsync(id);
-            if (incident == null) return NotFound();
+            if (incident == null) return NotFound(new { message = $"Incident {id} not found." });
             var result = _mapper.Map<IncidentResponseDTO>(incident);
             return Ok(result);
         }
-        
-        // GET: api/v1/incident/filter?type=closure&severity=High — Public
-        [HttpGet("filter")]
-        public async Task<ActionResult<List<IncidentResponseDTO>>> GetFiltered([FromQuery] string? type = null, [FromQuery] string? severity = null)
-        {
-            var incidents = await _incidentService.GetFilteredAsync(type, severity);
-            var result = _mapper.Map<List<IncidentResponseDTO>>(incidents);
-            return Ok(result);
-        }
 
+        // ────────────────────────────────────────────────────────────────────────
         // POST: api/v1/incident — Admin or Moderator only
+        // ────────────────────────────────────────────────────────────────────────
         [Authorize(Roles = "admin,moderator")]
         [HttpPost]
         public async Task<ActionResult<IncidentResponseDTO>> Create(IncidentCreateDTO incidentDto)
         {
             var incident = _mapper.Map<Incident>(incidentDto);
 
-            // Extract logged-in user's ID from JWT token
             var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
             if (userIdClaim != null)
                 incident.CreatedByUserId = int.Parse(userIdClaim.Value);
 
             var created = await _incidentService.CreateAsync(incident);
 
-            // Reload with includes for proper DTO mapping
+            // Reload with navigation props for proper DTO mapping
             var loaded = await _incidentService.GetByIdAsync(created.IncidentId);
             var result = _mapper.Map<IncidentResponseDTO>(loaded);
 
@@ -94,20 +107,27 @@ namespace ProjectWasel.Controllers
             );
         }
 
+        // ────────────────────────────────────────────────────────────────────────
         // PUT: api/v1/incident/{id} — Admin or Moderator only
+        // Partial update: any combination of title, description, type,
+        // severity, status, checkpointId can be provided.
+        // ────────────────────────────────────────────────────────────────────────
         [Authorize(Roles = "admin,moderator")]
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult<IncidentResponseDTO>> Update(int id, IncidentUpdateDTO dto)
         {
             var updated = await _incidentService.UpdatePartialAsync(id, dto);
-            if (updated == null) return NotFound();
+            if (updated == null) return NotFound(new { message = $"Incident {id} not found." });
             var result = _mapper.Map<IncidentResponseDTO>(updated);
             return Ok(result);
         }
 
+        // ────────────────────────────────────────────────────────────────────────
         // PATCH: api/v1/incident/{id}/verify — Admin or Moderator only
+        // Sets status = "verified", stamps VerifiedByUserId from JWT.
+        // ────────────────────────────────────────────────────────────────────────
         [Authorize(Roles = "admin,moderator")]
-        [HttpPatch("{id}/verify")]
+        [HttpPatch("{id:int}/verify")]
         public async Task<ActionResult<IncidentResponseDTO>> Verify(int id)
         {
             var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
@@ -115,30 +135,36 @@ namespace ProjectWasel.Controllers
 
             int verifiedByUserId = int.Parse(userIdClaim.Value);
             var incident = await _incidentService.VerifyAsync(id, verifiedByUserId);
-            if (incident == null) return NotFound();
+            if (incident == null) return NotFound(new { message = $"Incident {id} not found." });
 
             var result = _mapper.Map<IncidentResponseDTO>(incident);
             return Ok(result);
         }
 
+        // ────────────────────────────────────────────────────────────────────────
         // PATCH: api/v1/incident/{id}/close — Admin or Moderator only
+        // Sets status = "closed".
+        // ────────────────────────────────────────────────────────────────────────
         [Authorize(Roles = "admin,moderator")]
-        [HttpPatch("{id}/close")]
+        [HttpPatch("{id:int}/close")]
         public async Task<ActionResult<IncidentResponseDTO>> Close(int id)
         {
             var incident = await _incidentService.CloseAsync(id);
-            if (incident == null) return NotFound();
+            if (incident == null) return NotFound(new { message = $"Incident {id} not found." });
 
             var result = _mapper.Map<IncidentResponseDTO>(incident);
             return Ok(result);
         }
 
+        // ────────────────────────────────────────────────────────────────────────
         // DELETE: api/v1/incident/{id} — Admin only
+        // ────────────────────────────────────────────────────────────────────────
         [Authorize(Roles = "admin")]
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {
-            await _incidentService.DeleteAsync(id);
+            var deleted = await _incidentService.DeleteAsync(id);
+            if (!deleted) return NotFound(new { message = $"Incident {id} not found." });
             return NoContent();
         }
     }

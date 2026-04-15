@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ProjectWasel.Data;
 using ProjectWasel.Models;
 using ProjectWasel.Models.ModelsDTO;
@@ -13,6 +13,7 @@ namespace ProjectWasel.Repositories
         Task<List<Incident>> GetVerifiedIncidentsRawAsync();
         Task<List<Incident>> GetByCheckpointRawAsync(int checkpointId);
         Task<List<Incident>> GetFilteredAsync(string? type, string? severity);
+        Task<PagedResult<Incident>> GetPagedAsync(IncidentQueryParams queryParams);
         Task<Incident?> UpdatePartialAsync(int id, IncidentUpdateDTO dto);
         Task<Incident?> VerifyAsync(int id, int verifiedByUserId);
         Task<Incident?> CloseAsync(int id);
@@ -51,17 +52,17 @@ namespace ProjectWasel.Repositories
         public async Task<List<Incident>> GetVerifiedIncidentsRawAsync()
         {
             return await _context.Incidents
-                .FromSqlRaw("SELECT * FROM Incidents WHERE Status = {0}", "verified")
+                .FromSqlRaw("SELECT * FROM \"Incidents\" WHERE \"Status\" = {0}", "verified")
                 .ToListAsync();
         }
 
         public async Task<List<Incident>> GetByCheckpointRawAsync(int checkpointId)
         {
             return await _context.Incidents
-                .FromSqlRaw("SELECT * FROM Incidents WHERE CheckpointId = {0}", checkpointId)
+                .FromSqlRaw("SELECT * FROM \"Incidents\" WHERE \"CheckpointId\" = {0}", checkpointId)
                 .ToListAsync();
         }
-        
+
         public async Task<List<Incident>> GetIncidentsByCheckpointAsync(int checkpointId)
         {
             return await _dbSet
@@ -85,6 +86,63 @@ namespace ProjectWasel.Repositories
                 query = query.Where(i => i.Severity.ToLower() == severity.ToLower());
 
             return await query.OrderByDescending(i => i.CreatedAt).ToListAsync();
+        }
+
+        // ===== Full Filtering + Sorting + Pagination =====
+        public async Task<PagedResult<Incident>> GetPagedAsync(IncidentQueryParams q)
+        {
+            var query = _dbSet
+                .Include(i => i.Checkpoint)
+                .Include(i => i.CreatedByUser)
+                .Include(i => i.VerifiedByUser)
+                .AsQueryable();
+
+            // ── Filters ──────────────────────────────────────────────────────────
+            if (!string.IsNullOrWhiteSpace(q.Type))
+                query = query.Where(i => i.Type.ToLower() == q.Type.ToLower());
+
+            if (!string.IsNullOrWhiteSpace(q.Severity))
+                query = query.Where(i => i.Severity.ToLower() == q.Severity.ToLower());
+
+            if (!string.IsNullOrWhiteSpace(q.Status))
+                query = query.Where(i => i.Status.ToLower() == q.Status.ToLower());
+
+            if (q.CheckpointId.HasValue)
+                query = query.Where(i => i.CheckpointId == q.CheckpointId.Value);
+
+            if (q.CreatedAfter.HasValue)
+                query = query.Where(i => i.CreatedAt >= q.CreatedAfter.Value.ToUniversalTime());
+
+            if (q.CreatedBefore.HasValue)
+                query = query.Where(i => i.CreatedAt <= q.CreatedBefore.Value.ToUniversalTime());
+
+            // ── Sorting ───────────────────────────────────────────────────────────
+            bool asc = string.Equals(q.SortOrder, "asc", StringComparison.OrdinalIgnoreCase);
+
+            query = q.SortBy?.ToLower() switch
+            {
+                "updatedat" => asc ? query.OrderBy(i => i.UpdatedAt)  : query.OrderByDescending(i => i.UpdatedAt),
+                "severity"  => asc ? query.OrderBy(i => i.Severity)   : query.OrderByDescending(i => i.Severity),
+                "type"      => asc ? query.OrderBy(i => i.Type)       : query.OrderByDescending(i => i.Type),
+                "status"    => asc ? query.OrderBy(i => i.Status)     : query.OrderByDescending(i => i.Status),
+                _           => asc ? query.OrderBy(i => i.CreatedAt)  : query.OrderByDescending(i => i.CreatedAt),
+            };
+
+            // ── Pagination ────────────────────────────────────────────────────────
+            var totalCount = await query.CountAsync();
+
+            var data = await query
+                .Skip((q.Page - 1) * q.PageSize)
+                .Take(q.PageSize)
+                .ToListAsync();
+
+            return new PagedResult<Incident>
+            {
+                Data       = data,
+                TotalCount = totalCount,
+                Page       = q.Page,
+                PageSize   = q.PageSize
+            };
         }
 
         public async Task<Incident?> UpdatePartialAsync(int id, IncidentUpdateDTO dto)
@@ -123,7 +181,6 @@ namespace ProjectWasel.Repositories
             existing.UpdatedAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();
 
-            // Reload VerifiedByUser after setting the FK
             await _context.Entry(existing).Reference(i => i.VerifiedByUser).LoadAsync();
 
             return existing;
