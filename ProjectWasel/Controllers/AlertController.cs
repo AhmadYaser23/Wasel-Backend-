@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ProjectWasel.Models;
 using ProjectWasel.Services;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProjectWasel.Controllers
@@ -18,7 +20,7 @@ namespace ProjectWasel.Controllers
         }
 
         [HttpGet("subscribers/{incidentId}")]
-        public async Task<ActionResult<IEnumerable<Subscription>>> GetSubscribersForIncident([FromRoute] int incidentId)
+        public async Task<ActionResult> GetSubscribersForIncident([FromRoute] int incidentId)
         {
             // جلب الحادث من قاعدة البيانات
             var incident = await _alertService.GetIncidentByIdAsync(incidentId);
@@ -28,9 +30,8 @@ namespace ProjectWasel.Controllers
             // جلب المشتركين المتعلقين بالحادث
             var subscribers = await _alertService.GetSubscribersForIncident(incident);
 
-            return Ok(subscribers);
+            return Ok(new { data = subscribers, totalCount = subscribers.Count() });
         }
 
-        // لاحقًا نقدر نضيف endpoint لإرسال إشعارات (Email, SMS, Push)
     }
 }
