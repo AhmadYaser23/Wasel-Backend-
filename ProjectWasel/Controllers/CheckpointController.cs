@@ -46,18 +46,18 @@ namespace ProjectWasel.Controllers
 
         // GET: api/v1/checkpoint/active — Public (LINQ, no pagination needed)
         [HttpGet("active")]
-        public async Task<ActionResult<List<Checkpoint>>> GetActive()
+        public async Task<ActionResult> GetActive()
         {
             var activeCheckpoints = await _checkpointRepo.GetActiveCheckpointsAsync();
-            return Ok(activeCheckpoints);
+            return Ok(new { data = activeCheckpoints, totalCount = activeCheckpoints.Count });
         }
 
         // GET: api/v1/checkpoint/active-raw — Public (Raw SQL)
         [HttpGet("active-raw")]
-        public async Task<ActionResult<List<Checkpoint>>> GetActiveRaw()
+        public async Task<ActionResult> GetActiveRaw()
         {
             var active = await _checkpointRepo.GetActiveCheckpointsRawAsync();
-            return Ok(active);
+            return Ok(new { data = active, totalCount = active.Count });
         }
 
         // GET: api/v1/checkpoint/raw/{id} — Public (Raw SQL)
@@ -139,7 +139,7 @@ namespace ProjectWasel.Controllers
             await _checkpointRepo.AddAsync(checkpoint);
 
             var resultDto = _mapper.Map<CheckpointDTO>(checkpoint);
-            return CreatedAtAction(nameof(GetById), new { id = checkpoint.CheckpointId }, resultDto);
+            return Ok(resultDto);
         }
 
         // ────────────────────────────────────────────────────────────────────────
@@ -164,7 +164,7 @@ namespace ProjectWasel.Controllers
         {
             var deleted = await _checkpointRepo.DeleteAsync(id);
             if (!deleted) return NotFound(new { message = $"Checkpoint {id} not found." });
-            return NoContent();
+            return Ok(new { message = $"Checkpoint {id} deleted successfully." });
         }
     }
 }

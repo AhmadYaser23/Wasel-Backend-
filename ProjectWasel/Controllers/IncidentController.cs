@@ -55,20 +55,20 @@ namespace ProjectWasel.Controllers
 
         // GET: api/v1/incident/verified — Public (raw SQL, kept for compatibility)
         [HttpGet("verified")]
-        public async Task<ActionResult<List<IncidentResponseDTO>>> GetVerified()
+        public async Task<ActionResult> GetVerified()
         {
             var verified = await _incidentService.GetVerifiedIncidentsRawAsync();
             var result = _mapper.Map<List<IncidentResponseDTO>>(verified);
-            return Ok(result);
+            return Ok(new { data = result, totalCount = result.Count });
         }
 
         // GET: api/v1/incident/checkpoint/{checkpointId} — Public
         [HttpGet("checkpoint/{checkpointId}")]
-        public async Task<ActionResult<List<IncidentResponseDTO>>> GetByCheckpoint(int checkpointId)
+        public async Task<ActionResult> GetByCheckpoint(int checkpointId)
         {
             var list = await _incidentService.GetByCheckpointRawAsync(checkpointId);
             var result = _mapper.Map<List<IncidentResponseDTO>>(list);
-            return Ok(result);
+            return Ok(new { data = result, totalCount = result.Count });
         }
 
         // GET: api/v1/incident/{id} — Public
@@ -100,11 +100,7 @@ namespace ProjectWasel.Controllers
             var loaded = await _incidentService.GetByIdAsync(created.IncidentId);
             var result = _mapper.Map<IncidentResponseDTO>(loaded);
 
-            return CreatedAtAction(
-                nameof(GetById),
-                new { version = "1", id = result.IncidentId },
-                result
-            );
+            return Ok(result);
         }
 
         // ────────────────────────────────────────────────────────────────────────
@@ -165,7 +161,7 @@ namespace ProjectWasel.Controllers
         {
             var deleted = await _incidentService.DeleteAsync(id);
             if (!deleted) return NotFound(new { message = $"Incident {id} not found." });
-            return NoContent();
+            return Ok(new { message = $"Incident {id} deleted successfully." });
         }
     }
 }
