@@ -1,0 +1,77 @@
+name: dockercompose13380831372703154102
+services:
+  projectwasel21:
+    build:
+      context: C:\Users\noorf\source\repos\ProjectWasel21\ProjectWasel21
+      dockerfile: Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=WaselDb;User Id=sa;Password=StrongPass!123;TrustServerCertificate=True;
+    networks:
+      productnetwork: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        published: "8081"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    restart: on-failure
+    volumes:
+      - type: bind
+        source: C:\Users\noorf\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\noorf\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\noorf\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\noorf\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind: {}
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: StrongPass!123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      productnetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: sqlvolume
+        target: /var/opt/mssql
+        volume: {}
+networks:
+  productnetwork:
+    name: dockercompose13380831372703154102_productnetwork
+volumes:
+  sqlvolume:
+    name: dockercompose13380831372703154102_sqlvolume
