@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ProjectWasel21.Models;
 using ProjectWasel21.Services;
 using ProjectWasel21.Data;
@@ -7,7 +7,8 @@ using System.Text.Json;
 namespace ProjectWasel21.Controllers
 {
     [ApiController]
-    [Route("api/external")]
+    [ApiVersion("1.0")]
+    [Route("api/{version:apiVersion}/external")]
     public class ExternalDataController : ControllerBase
     {
         private readonly ExternalApiService _externalApi;
